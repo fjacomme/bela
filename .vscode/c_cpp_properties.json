@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Bela",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/root/Bela/include",
+                "/root/Bela"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "linux-clang-arm"
+        }
+    ],
+    "version": 4
+}

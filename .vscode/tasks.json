@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "cppbuild",
+            "command": "make",
+            "args": [
+                "--makefile=/root/Bela/Makefile",
+                "PROJECT='${workspaceFolderBasename}'",
+                "debug"
+            ],
+            "options": {
+                "cwd": "/root/Bela/"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Build Release",
+            "type": "cppbuild",
+            "command": "make",
+            "dependsOn": "Clean",
+            "args": [
+                "--makefile=/root/Bela/Makefile",
+                "PROJECT='${workspaceFolderBasename}'",
+                "Bela"
+            ],
+            "options": {
+                "cwd": "/root/Bela/"
+            },
+            "group": "build"
+        },
+        {
+            "label": "Clean",
+            "type": "cppbuild",
+            "command": "make",
+            "args": [
+                "--makefile=/root/Bela/Makefile",
+                "PROJECT='${workspaceFolderBasename}'",
+                "clean"
+            ],
+            "options": {
+                "cwd": "/root/Bela/"
+            },
+            "group": "build"
+        }
+    ]
+}
